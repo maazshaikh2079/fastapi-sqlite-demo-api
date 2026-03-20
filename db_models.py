@@ -14,7 +14,9 @@ class Order(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
 
-    item_name: Mapped[str] = mapped_column(String, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String, index=True, nullable=False)
+
+    description: Mapped[str] = mapped_column(String, nullable=True)
 
     quantity: Mapped[int] = mapped_column(Integer, default=0)
 
