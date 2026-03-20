@@ -1,4 +1,4 @@
-# FastAPI SQLiteDB Demo API Project: Order Management API
+# FastAPI SQLiteDB Demo API: Order Management API
 
 This project is a simple CRUD API for managing orders using:
 
@@ -8,7 +8,10 @@ This project is a simple CRUD API for managing orders using:
 
 ## Project Structure
 
-- app.py: FastAPI app, SQLAlchemy model, and CRUD endpoints
+- main.py: FastAPI app and CRUD endpoints
+- db_config.py: SQLAlchemy database configuration
+- db_models.py: SQLAlchemy ORM models
+- schemas.py: Pydantic schemas for data validation
 - requirements.txt: Python dependencies
 - orders.db: SQLite database file (created automatically)
 
