@@ -22,7 +22,7 @@ class OrderCreate(OrderBase):
 
 
 # For Updating (All fields optional, NO ID allowed in body)
-class OrderUpdate(BaseModel):
+class OrderUpdate(OrderBase):
     """Schema for updating an existing order. All fields are optional."""
 
     name: Optional[str] = None
